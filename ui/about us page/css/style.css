@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* -- =====footer start===== -- */
+
+
+footer .footer-row .footer-colum .text{
+    font-size: 16px;
+}
+footer .footer-row .footer-colum .text-link{
+    font-size: 18px;
+}
+footer .footer-row .footer-col .text-link{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 0.2em;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.list-style-none{
+    list-style: none;
+}
+.text-wigth{
+    font-weight: 400;
+}
+.list-style-none> li a:hover{
+    color: #655CED !important;
+    text-decoration: underline !important;
+}
+footer .copy-right{
+    background: #655CED;
+    text-align: center;
+    color: white;
+    padding: 1em;
+    border-top-left-radius:70px;
+    border-top-right-radius:70px;
+}
+.socil-link .img-box{
+    margin-top: 0.5em;
+}
+.socil-link .img-box img{
+    width: 30px;
+    margin-right: 0.5em;
+}
+
+
+
+
+
+@media screen and (max-width:766px) {
+   
+    .footer-col ul{
+        max-height: 0 !important;
+        margin: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+    .footer-row .down ul{
+        max-height: 500px !important;
+        transition: all 1s;
+    }
+   .footer-col h4{
+       cursor: pointer;
+       position: relative;
+       display: flex;
+       align-items: center;
+       border-bottom: 1px solid rgb(145, 142, 142);
+       padding-bottom: 0.5em; 
+   }
+   .footer-col h4::after{
+       content: "";
+       position: absolute;
+       height: 1px;
+       width: 16px;
+       right: 0;
+       background: black;
+       transition: all 0.2s;
+
+   }
+   .footer-col h4::before{
+       content: "";
+       position: absolute;
+       height: 1px;
+       width: 16px;
+       right: 0;
+       transform: rotate(90deg);
+       background: black;
+       transition: all 0.2s;
+
+   }
+   .down h4{
+       position: relative;
+   }
+   
+   .down h4::before{
+       transform: rotate(0);
+       transition: all 0.2s;
+   }
+}
+
+/* -- =====footer end===== -- */
